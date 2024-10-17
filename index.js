@@ -24,5 +24,6 @@ connectDB()
     console.log("MONOGDB connection failed...",err)
 })
 
+app.use(express.json())
 app.use("/url",urlRoute)
 

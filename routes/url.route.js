@@ -4,7 +4,7 @@ import {generateNewShortURL} from '../controller/url.controller.js'
 
 const router = Router();
 
-router.post('/short',generateNewShortURL)
+router.post('/',generateNewShortURL)
 
 
 export default router;

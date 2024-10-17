@@ -3,9 +3,6 @@ import mongoose from "mongoose";
 
 const connectDB = async () => {
   try {
-    console.log(
-        `MONGO_DB URL : ${process.env.MONGO_URL}`
-      );
     const connectionInstace = await mongoose.connect(
       `${process.env.MONGO_URL}/short-url`
     );
